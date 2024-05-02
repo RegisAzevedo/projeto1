@@ -115,4 +115,10 @@ input[type="submit"]:hover{
     border: 1px solid #4ab3c6;
   }
 
+ @media(max-width: 768px){
+    #login {
+      width: 80%;
+    }
+  }
+
   
