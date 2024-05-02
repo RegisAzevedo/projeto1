@@ -1,0 +1,130 @@
+#banner {
+    background-image: url('https://pbs.twimg.com/media/FBwMEAMWQAA6BOO?format=jpg&name=medium');
+    background-position: 65%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.trailer-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.trailer1 {
+    width: 45%;
+    cursor: pointer;
+
+}
+
+#sinopse {
+    width: 45%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descripition {
+    color: white;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 50%;
+    background-color: #d21617;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: .8s;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    transform: scale(1.15);
+}
+
+.actor-cards-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.cards-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.card {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 8px;
+    transition: .5s;
+
+    /*Trabalhando com nome do ator*/
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 0 10px 10px;
+    color: white;
+    font-size: 17px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.banner-1 {
+    background-image: url('https://www.estrelando.com.br/uploads/2022/03/08/robert-pattinson-batman-1646775648.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2019/10/zoe-kravitz-atriz-foto.jpg.webp');
+}
+
+.banner-3 {
+    background-image: url('https://t.ctcdn.com.br/zrThhJ8U8hbVGyTRtCLIhTM0S00=/768x432/smart/i360687.jpeg');
+}
+
+@media (max-width: 768px) {
+
+    #banner {
+        background-image: url('https://i0.wp.com/lascronicasdedeckard.com/wp-content/uploads/2022/03/the-batman-2022-Critica-Cronicas-de-Deckard.jpg?w=830&ssl=1');
+        background-position: center 100px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .trailer-container {
+        display: grid;
+    }
+
+    .trailer1 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #sinopse {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .button {
+        width: 50%;
+    }
+}

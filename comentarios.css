@@ -1,0 +1,36 @@
+
+.comentarios {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-comentarios {
+    width: 70%;
+    margin-top: 120px;
+    display: grid;
+}
+
+.senafilme {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.sidebar {
+    display: flex;
+    margin: 0 auto;
+    overflow: scroll;
+    max-width: 80%;
+    margin-top: 40px;
+}
+
+.sidebar > div {
+    margin: 0px 5px;
+}
+
+.depoimento {
+    width: 250px;
+    border-radius: 10%;
+}

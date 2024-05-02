@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet"  href="./index.css">
+    <link rel="stylesheet" href="./contato.css">
+    <link rel="stylesheet" href="./home.css"> <!--pega estilo do button-->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img id="logo" src="../Projeto1/Midias/logo1.jpg">
+        <nav class="header-navigation">
+            <ul>
+                <a href="./home.html">
+                    <li>Home</li>
+                </a>
+                <a href="./elenco.html">
+                    <li>Elenco</li>
+                </a>
+                <a href="./comentarios.html">
+                    <li>Comentários</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img class="banner-contato" src="https://www.telegraph.co.uk/content/dam/films/2022/03/08/TELEMMGLPICT000287055553_trans_NvBQzQNjv4Bqu80kdbplZRtJ-DGPwYhkmlw9xPNRtk5HqddgauXXJvM.jpeg?imwidth=960">
+        <div class="contato-container">
+            <p>
+                Se você já assistiu o filme, envie seu comentário.<br>
+                Será um prazer receber sua opinião e tirar suas dúvidas.
+            </p>
+            <div class="formulario">
+                <input style="display: block" id="text" type="text" name="nome" placeholder="Informe seu nome"/><br>
+                <input style="display: block" id="email" type="email" name="e-mail" placeholder="Insira um e-mail válido"/><br>
+                <textarea style="display: block" id="mensagem" type="mensagem" name="mensagem" placeholder="Deixe seu comentário" rows="5"></textarea>
+                <button class="button" onclick="abrirAlerta()">Enviar</button>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js"></script>
+    <script class="alerta">
+            function abrirAlerta(){
+                alert("Sua mensagem foi enviada com sucesso!")
+            }
+    </script>
+    <footer>
+        <nav>
+            <ul class="footer-list">
+                <a href="./home.html">
+                    <li>Home</li>
+                </a>
+                <a href="./elenco.html">
+                    <li>Elenco</li>
+                </a>
+                <a href="./comentarios.html">
+                    <li>Comentários</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+            </ul>
+        </nav>
+        <div class="logo-container">
+            <img id="logo2" src="https://p4.wallpaperbetter.com/wallpaper/341/373/97/eyes-silhouette-mask-batman-wallpaper-preview.jpg">
+            <p>Todos os direitos reservados ©<br>
+            Desenvolvido por: Regis Azevedo</p>
+        </div>
+    </footer>
+</body>
+</html>
